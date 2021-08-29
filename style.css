@@ -1,3 +1,221 @@
 body {
-    background-color: gray;
+    background-color: lightgray;
+}
+
+#main {
+    background-color: lightgray;
+    ;
+    /* border-color: blue; */
+    /* border-style: solid; */
+    /* border-width: 5px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    margin-top: 3%;
+    margin-bottom: 1%;
+    max-width: 70%;
+    text-align: center;
+    font-family: 'Allison', Arial, Helvetica, sans-serif;
+    font-size: 65px;
+    color: rgb(0, 0, 0);
+
+}
+
+@media (max-width: 720px) {
+    #title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 360px) {
+    #title {
+        font-size: 24px;
+    }
+}
+
+
+#img-div {
+    background: linear-gradient(var(--angle), #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+    --angle: 0deg;
+	animation: rotate 22s linear infinite;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2%;
+}
+
+@keyframes img-div-gradient {
+    0% {
+        background-position: 0% 50%;
+	}
+	50% {
+        background-position: 100% 50%;
+	}
+	100% {
+        background-position: 0% 50%;
+	}
+}
+#image {
+    border-color: black;
+    border-width: 7px;
+    border-style: solid;
+    border-radius: 50%;
+    max-width: 60%;
+    height: auto;
+    /* margin-top: 3%; */
+    margin: 3% 20% 2% 20%;
+}
+
+
+@keyframes rotate {
+    to {
+        --angle: -360deg;
+    }
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+#img-caption {
+    /* border-color: blue;
+    border-width: 5px;
+    border-style: solid; */
+    margin: 0% 15% 1% 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, rgb(100, 100, 100), #ccc);
+    width: 60%;
+    margin-bottom: 2%;
+}
+
+#hr-two {
+    margin-top: 2%;
+}
+
+#synopsis {
+    /* border-color: red;
+    border-width: 5px;
+    border-style: solid; */
+    margin: 0% 20% 0% 20%;
+    max-width: 1200px;
+    text-align: justify;
+    font-family: 'Open Sans Condensed', Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+#tribute-info {
+    /* border-color: red;
+    border-width: 5px;
+    border-style: solid; */
+    
+}
+
+#tribute-list-title {
+    margin: 0% 5% 0% 5%;
+    max-width: 1200px;
+    font-family: 'Open Sans Condensed', Arial, sans-serif;
+    color: rgb(80, 80, 80);
+}
+
+@media (max-width: 720px) {
+    #tribute-list-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    #tribute-list-title {
+        font-size: 16px;
+    }
+}
+
+li {
+    margin: .8em 0 .8em 0;
+    max-width: 1200px;
+    color: rgba(133, 133, 133, 0.5);  
+
+}
+
+time {
+    font-family: 'Open Sans Condensed', Arial, sans-serif;
+    color:rgb(133, 133, 133);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@media (max-width: 720px) {
+    time {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 360px) {
+    time {
+        font-size: 14px;
+    }
+}
+
+a:link    {
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', Arial, sans-serif;
+    font-size: 18px;
+    color: rgb(40, 40, 40);  
+}
+
+a:visited    {
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', Arial, sans-serif;
+    font-size: 18px;
+    color: rgb(162, 64, 129);    
+}
+
+a:hover    {
+    text-decoration: underline;
+    font-family: 'Open Sans Condensed', Arial, sans-serif;
+    font-size: 18px;
+    color: rgb(22, 22, 22);    
+}
+
+@media (max-width: 720px) {
+    a:link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 360px) {
+    a:link {
+        font-size: 14px;
+    }
+}
+
+
+
+#tribute-list-title{
+    margin: 0% 20% 0% 20%
+}
+
+#tribute-info-list {
+    margin: 0% 20% 2% 20%;
+    max-width: 1200px;
+}
+
+#tribute-link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgb(40, 40, 40);
 }
